@@ -7,6 +7,7 @@ namespace Models
     public class OrdersCount
     {
         public string Destination { get; set; }
-        public decimal Sum { get; set; }
+        public IEnumerable<Product> Product { get; set; }
+        public double Sum { get; set; }
     }
 }
